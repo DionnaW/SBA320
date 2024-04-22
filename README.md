@@ -12,4 +12,6 @@ Currently, two official plugins are available:
 starting my 320 sba today, which will be a login page that goes to a profile page where customers will be able to book my services fro their special event
 I plan on using this for my capstone project
 I installed react and the app is running
-I installed react-router-dom and fullcalendar for functionality of my idea
+I installed react-router-dom and fullcalendar, fullcalendar/timegrid, and fullcalendar/interaction for functionality of my calendar
+I installed firebase for authentication for usernames and passwords storage
+App is running with minimal usability issues because i didn't finish with firebase

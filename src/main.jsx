@@ -1,25 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import AppRouter from './AppRouter';
-import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const firebaseConfig = {
-    apiKey: "AIzaSyD2G4JdhgQ0mCM67Qvc_zp2X2ddULc48XI",
-    authDomain: "deez-cold-ones.firebaseapp.com",
-    projectId: "deez-cold-ones",
-    storageBucket: "deez-cold-ones.appspot.com",
-    messagingSenderId: "181507391042",
-    appId: "1:181507391042:web:1eeaa504ca8032f22d37db",
-    measurementId: "G-JSW7TKK33X"
-};
 
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
-ReactDOM.render(
+ReactDOM.createRoot( document.getElementById('root')).render(
   <React.StrictMode>
-    <AppRouter />
+    <Router>
+    <App />
+    </Router>
   </React.StrictMode>,
-  document.getElementById('root')
 );
