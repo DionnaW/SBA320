@@ -1,3 +1,4 @@
+//==============================================THIS IS BLOCKED OFF FOR CAPSTONE PROJECT
 import React, { useState, useEffect} from 'react';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { ref, onValue } from 'firebase/database';
@@ -53,29 +54,29 @@ const Profile = () => {
 
   return (
     <div>
-      <h1>Profile Page</h1>
-      <h2>Bookings:</h2>
-      <ul>
-        {bookings.map((booking) => (
+       <h1>Profile Page</h1>
+       <h2>Bookings:</h2>
+       <ul>
+         {bookings.map((booking) => (
           <li key={booking.id}>
-            {booking.date}
-            <button onClick={() => handleEditBooking(booking.id, booking.date)}>Edit</button>
-            <button onClick={() => handleDeleteBooking(booking.id)}>Delete</button>
-          </li>
+             {booking.date}
+             <button onClick={() => handleEditBooking(booking.id, booking.date)}>Edit</button>
+             <button onClick={() => handleDeleteBooking(booking.id)}>Delete</button>
+           </li>
         ))}
-      </ul>
-      <input
+       </ul>
+       <input
         type="date"
         value={newBookingDate}
         onChange={(e) => setNewBookingDate(e.target.value)}
         required
       />
-      {editBookingId ? (
+       {editBookingId ? (
         <button onClick={handleUpdateBooking}>Update Booking</button>
       ) : (
         <button onClick={handleNewBooking}>Add Booking</button>
       )}
-    </div>
+     </div>
   );
 };
 

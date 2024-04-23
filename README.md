@@ -15,3 +15,4 @@ I installed react and the app is running
 I installed react-router-dom and fullcalendar, fullcalendar/timegrid, and fullcalendar/interaction for functionality of my calendar
 I installed firebase for authentication for usernames and passwords storage
 App is running with minimal usability issues because i didn't finish with firebase
+Configured my firebase atuh, set nav, and welcome pages

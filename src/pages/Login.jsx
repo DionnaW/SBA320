@@ -10,9 +10,9 @@ const Login = () => {
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      // this is for the sign using firebase
+      //this is for the sign using firebase
       await signInWithEmailAndPassword(auth, email, password);
-      // this will redirect to the profile page upon a successful login
+      //this will redirect to the profile page upon a successful login
       window.location.href = '/profile';
     } catch (error) {
       setError(error.message);
@@ -44,9 +44,9 @@ const Login = () => {
           required
         /><br />
 
-        <input type="submit" value="Log In" />
-      </form>
-    </div>
+         <input type="submit" value="Log In" />
+       </form>
+     </div>
   );
 };
 

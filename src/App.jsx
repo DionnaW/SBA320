@@ -1,9 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import Nav from './components/Nav';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
+import Welcome from './pages/Welcome';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyD2G4JdhgQ0mCM67Qvc_zp2X2ddULc48XI",
@@ -17,17 +21,34 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
+const auth = getAuth(app);
 
 function App() {
   return (
-    <>
-    <Login/>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/profile" element={<Profile />} />
+    <div>
+
+      <Router>
+        <Nav/>
+        <Routes>
+          <Route path='/' element={<Welcome/>}/>
+          <Route path='/login' element={<Login/>} />
+          <Route path='profile' element={<Profile/>}/>
         </Routes>
-    </>
+      </Router>
+
+    </div>
+
+
+// function App() {
+  // return (
+/*  */
+    /* <Router> */
+      /* <Routes> */
+        /* <Route path="/" element={<Welcome />} /> */
+        /* <Route path="/login" element={<Login />} /> */
+        /* <Route path="/profile" element={<Profile />} /> */
+      /* </Routes> */
+    /* </Router> */
   );
 }
 
