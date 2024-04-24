@@ -16,3 +16,4 @@ I installed react-router-dom and fullcalendar, fullcalendar/timegrid, and fullca
 I installed firebase for authentication for usernames and passwords storage
 App is running with minimal usability issues because i didn't finish with firebase
 Configured my firebase atuh, set nav, and welcome pages
+I finally have my firebase auth codes working for creat an account and upon entering a successful email will lead to login page
