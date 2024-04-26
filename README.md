@@ -25,3 +25,4 @@ i think the project is complete! waiting to speak with the teacher then i will c
 having firebase errors at deploy checking to see if importing the firebase config will cure this issue
 that didn't help so i'm goin to expose my firebase imfo to se if that works!
 It didn't work so i fetched a pokemon api for the sake of the project AND we actually have a pikachu flavor so.....WIN WIN!
+well site is still not working properly, so i created a netlify.toml file for my root directory and a _redirect file for my public directory
