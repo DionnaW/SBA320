@@ -1,27 +1,23 @@
-import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
-// import { auth } from './firebase/Firebase';
-// import AuthProvider from './components/AuthProvider';
-import Nav from './components/Nav';
-import Login from './pages/Login';
-import Profile from './pages/Profile';
-import Main from './pages/Main';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Nav/>
+    <Router>
+      <AuthProvider>
+        <Header />
         <Routes>
-          <Route path='/' element={<Main/>}/>
-          <Route path='/login' element={<Login/>} />
-          <Route path='/profile' element={<Profile/>}/>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
-      </Router>
-
-    </div>
-
+      </AuthProvider>
+    </Router>
   );
 }
 
