@@ -23,3 +23,4 @@ still trying to find a free calendar api but app is still running so i'll commit
 have my login.jsx functuality working without errors
 i think the project is complete! waiting to speak with the teacher then i will commit and submit
 having firebase errors at deploy checking to see if importing the firebase config will cure this issue
+that didn't help so i'm goin to expose my firebase imfo to se if that works!
