@@ -22,3 +22,4 @@ created .evn file for firebase, because i kept getting secret warnings from gith
 still trying to find a free calendar api but app is still running so i'll commit just to commit
 have my login.jsx functuality working without errors
 i think the project is complete! waiting to speak with the teacher then i will commit and submit
+having firebase errors at deploy checking to see if importing the firebase config will cure this issue
