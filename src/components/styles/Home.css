@@ -1,0 +1,22 @@
+/* Home.css */
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 900px;
+    width: 100%;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    border-bottom: 5px solid blue;
+    background-color: lightgrey;
+  }
+  
+  .nav a {
+    font-size: 30px;
+    color: blue;
+    text-decoration: none;
+    justify-content: space-between;
+    text-align: c;
+  }
