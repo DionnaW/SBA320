@@ -1,5 +1,5 @@
-/* Home.css */
-.nav {
+
+  .nav {
     display: flex;
     flex-direction: row;
     gap: 900px;

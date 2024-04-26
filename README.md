@@ -21,3 +21,4 @@ Installed bootstrap and react-bootstrap for styling
 created .evn file for firebase, because i kept getting secret warnings from github for exposing my google api
 still trying to find a free calendar api but app is still running so i'll commit just to commit
 have my login.jsx functuality working without errors
+i think the project is complete! waiting to speak with the teacher then i will commit and submit

@@ -1,16 +1,3 @@
-// import React from 'react'
-// import { useAuth } from '../context/AuthContext'
-// 
-// const Home = () => {
-    // const { currentUser } = useAuth()
-    // return (
-        // <div className='text-2xl font-bold pt-14'>Hello {currentUser.displayName ? currentUser.displayName : currentUser.email}, you are now logged in.</div>
-    // )
-// }
-// 
-// export default Home
-//JUST INCASE THIS NEW THING DON'T WORK====================================================
-
 import React, { useEffect, useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 
@@ -19,23 +6,23 @@ const Home = () => {
     const [holidays, setHolidays] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // useEffect(() => {
-        // const url = "https://calendarific.com/api/v2/holidays?api_key=FqsNz5P9tM1gQklpYqBC0aql9izvUikv&country=US&year=2024";
-        // fetch(url)
-            // .then(response => response.json())
-            // .then(data => {
-                // if (data.response && data.response.holidays) {
-                    // setHolidays(data.response.holidays);
-                // } else {
-                    // console.error('Invalid holidays data:', data);
-                // }
-                // setLoading(false);
-            // })
-            // .catch(error => {
-                // console.error('Error fetching holidays:', error);
-                // setLoading(false);
-            // });
-    // }, []);
+    useEffect(() => {
+        const url = "https://calendarific.com/api/v2/holidays?api_key=FqsNz5P9tM1gQklpYqBC0aql9izvUikv&country=US&year=2024";
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                if (data.response && data.response.holidays) {
+                    setHolidays(data.response.holidays);
+                } else {
+                    console.error('Invalid holidays data:', data);
+                }
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('Error fetching holidays:', error);
+                setLoading(false);
+            });
+    }, []);
 
     return (
         <div className='text-2xl font-bold pt-14'>
