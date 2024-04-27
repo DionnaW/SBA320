@@ -2,7 +2,7 @@
   .nav {
     display: flex;
     flex-direction: row;
-    gap: 900px;
+    gap: 50px;
     width: 100%;
     z-index: 20;
     position: fixed;
